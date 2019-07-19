@@ -4,49 +4,57 @@
       "id": 2,
       "name": "Pizza",
       "category": "Pasta",
-      "ethnicity": "Italian"
+      "ethnicity": "Italian",
+      "barcode": "0074653652435"
     },
     {
       "id": 3,
       "name": "Bacon Cheeseburger",
       "category": "Grill",
-      "ethnicity": "American"
+      "ethnicity": "American",
+      "barcode": "0035826093967"
     },
     {
       "id": 4,
       "name": "Brisket",
       "category": "Barbecue",
-      "ethnicity": "American"
+      "ethnicity": "American",
+      "barcode": "0041220338092"
     },
     {
       "id": 5,
       "name": "Ice Cream",
       "category": "Dairy",
-      "ethnicity": "American"
+      "ethnicity": "American",
+      "barcode": "0011110014023"
     },
     {
       "id": 6,
       "name": "Tacos",
       "category": "Party",
-      "ethnicity": "Mexican"
+      "ethnicity": "Mexican",
+      "barcode": "0037600145909"
     },
     {
       "name": "Kimchi",
       "category": "Side Dish",
       "ethnicity": "Korean",
-      "id": 7
+      "id": 7,
+      "barcode": "0026396908256"
     },
     {
       "name": "Bulgogi",
       "category": "Beef",
       "ethnicity": "Korean",
-      "id": 8
+      "id": 8,
+      "barcode": "0807176709665"
     },
     {
       "name": "Corn",
       "category": "Side Dish",
       "ethnicity": "American",
-      "id": 8
+      "id": 8,
+      "barcode": "0024000163015"
     }
   ]
 }
