@@ -41,6 +41,12 @@
       "category": "Beef",
       "ethnicity": "Korean",
       "id": 8
+    },
+    {
+      "name": "Corn",
+      "category": "Side Dish",
+      "ethnicity": "American",
+      "id": 8
     }
   ]
 }

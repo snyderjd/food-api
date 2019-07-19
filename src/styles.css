@@ -1,0 +1,23 @@
+.page__heading {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foodList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.food__item {
+    background-color: lightgoldenrodyellow;
+    width: 20%;
+    border: 2px solid blue;
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+    padding: 20px;
+}
+
+.food__name {
+    font-size: 24pt;
+}
