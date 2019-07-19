@@ -40,15 +40,23 @@ fetch("http://localhost:8088/foods")
 
 const foodFactory = (object) => {
     const foodList = document.querySelector('.foodList');
-    const noIngredients = `Ingredients not listed.`
+    const ingredients = () => {
+        if (object.product.ingredients_text) {
+            return object.product.ingredients_text;
+        }  else {
+            return 'No ingredients listed'
+        }
+        
+    }
+    
     const newFoodHTML = `<section class="food__item">
                             <h1 class="food__name">${object.product.product_name}</h1>
                             <h3 class="food__country">Country of Origin: ${object.product.countries}</h3>
                             <h3 class="food__ingredients__heading">Ingredients:</h3>
-                                <p>${object.product.ingredients_text.length > 0 ? object.product.ingredients_text : noIngredients}</p>
+                                <p>${ingredients()}</p>
                             <h3 class="food__calories">Calories per Serving: ${object.product.nutriments.energy_value}</h3>
                             <h3 class="food__fat">Fat per Serving: ${object.product.nutriments.fat_serving}</h3>
-                            <h3 class="food__suger">Sugar per Serving: ${object.product.nutriments.sugars}</h3>
+                            <h3 class="food__sugar">Sugar per Serving: ${object.product.nutriments.sugars}</h3>
                         </section>`;
     
     foodList.innerHTML += newFoodHTML;
