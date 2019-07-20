@@ -44,9 +44,16 @@ const foodFactory = (object) => {
         if (object.product.ingredients_text) {
             return object.product.ingredients_text;
         }  else {
-            return 'No ingredients listed'
+            return 'No ingredients listed';
         }
-        
+    }
+
+    const foodImage = () => {
+        if (object.product.image_front_small_url) {
+            return object.product.image_front_small_url;
+        } else {
+            return 'No image available';
+        }
     }
     
     const newFoodHTML = `<section class="food__item">
@@ -57,6 +64,7 @@ const foodFactory = (object) => {
                             <h3 class="food__calories">Calories per Serving: ${object.product.nutriments.energy_value}</h3>
                             <h3 class="food__fat">Fat per Serving: ${object.product.nutriments.fat_serving}</h3>
                             <h3 class="food__sugar">Sugar per Serving: ${object.product.nutriments.sugars}</h3>
+                            <img src="${foodImage()}" alt="${foodImage()}">
                         </section>`;
     
     foodList.innerHTML += newFoodHTML;
